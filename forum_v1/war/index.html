@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Dynamic Form</title>
+<script language="javascript">
+function changeIt()
+{
+var i = 1;
+my_div.innerHTML = my_div.innerHTML +"<br><textarea name='kk' rows='6' cols='30'></textarea>" +
+"<br><br>tags:<input type='text' name='tag' value='tag'>" + "<br><br><input type='submit' value='POST'>"
+}
+</script>
+<style>
+body { 
+    background:  url("6918865-black-background-wood.jpg") no-repeat fixed center; 
+    color :red;
+}
+
+</style>
+</head>
+<body>
+<form name="form" action="forum_v1" method="get">
+<p><strong>FORUM:-</strong></p>
+<input type="button" value="NEW POST" onClick="changeIt()">
+<div id="my_div"></div>
+</form>
+</body>
+</html>
